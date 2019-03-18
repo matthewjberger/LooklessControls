@@ -6,11 +6,16 @@
         xmlns:looklessControls="clr-namespace:LooklessControls;assembly=LooklessControls"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <looklessControls:LooklessControl>
-            <looklessControls:LooklessControl.CustomContent>
-                <TextBox Text="Test"/>
-            </looklessControls:LooklessControl.CustomContent>
-        </looklessControls:LooklessControl>
-    </Grid>
+    <TabControl>
+        <TabItem Header="Control 1">
+            <looklessControls:LooklessControl>
+                <looklessControls:LooklessControl.CustomContent>
+                    <Border Background="Black" BorderThickness="1" Margin="4,4,4,4">
+                        <TextBox Text="Test"/>
+                    </Border>
+                </looklessControls:LooklessControl.CustomContent>
+            </looklessControls:LooklessControl>
+        </TabItem>
+    </TabControl>
+
 </Window>
