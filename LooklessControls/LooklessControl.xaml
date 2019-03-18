@@ -7,10 +7,13 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:LooklessControl}">
-                    <ContentPresenter
-                        Name="PART_CustomContentPresenter"
-                        Content="{Binding CustomContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:LooklessControl}}}"
-                        DataContext="{Binding DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:LooklessControl}}}" />
+                    <StackPanel>
+                        <Label Name="PART_Title" Content="{Binding Title, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:LooklessControl}}}"/>
+                        <ContentPresenter
+                            Name="PART_CustomContentPresenter"
+                            Content="{Binding CustomContent, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:LooklessControl}}}"
+                            DataContext="{Binding DataContext, RelativeSource={RelativeSource FindAncestor, AncestorType={x:Type local:LooklessControl}}}" />
+                    </StackPanel>
                 </ControlTemplate>
             </Setter.Value>
         </Setter>

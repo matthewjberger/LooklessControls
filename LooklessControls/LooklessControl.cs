@@ -5,9 +5,11 @@
 
     // Template parts are specified in attributes here
     [TemplatePart(Name = PART_CustomContentPresenter, Type = typeof(ContentPresenter))]
+    [TemplatePart(Name = PART_Title, Type = typeof(string))]
     public class LooklessControl : Control
     {
         public const string PART_CustomContentPresenter = "PART_CustomContentPresenter";
+        public const string PART_Title = "PART_Title";
 
         static LooklessControl()
         {
@@ -47,5 +49,13 @@
         public static readonly DependencyProperty CustomContentProperty =
             DependencyProperty.Register("CustomContent", typeof(object), typeof(LooklessControl));
 
+        public string Title
+        {
+            get => (string)GetValue(TitleProperty);
+            set => SetValue(TitleProperty, value);
+        }
+
+        public static readonly DependencyProperty TitleProperty =
+            DependencyProperty.Register("Title", typeof(string), typeof(LooklessControl), new PropertyMetadata("Default Text"));
     }
 }

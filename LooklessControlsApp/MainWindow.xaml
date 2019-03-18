@@ -8,7 +8,7 @@
         Title="MainWindow" Height="200" Width="300">
     <TabControl>
         <TabItem Header="Control 1">
-            <looklessControls:LooklessControl>
+            <looklessControls:LooklessControl Title="Customized Lookless Control">
                 <looklessControls:LooklessControl.CustomContent>
 
                     <Border Background="Gainsboro" BorderThickness="1" Margin="4,4,4,4">

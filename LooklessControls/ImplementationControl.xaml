@@ -1,5 +1,4 @@
-﻿<!-- NOTE: the build action must be set to 'Resource' for resource dictionaries referenced by the Generic.xaml -->
-<ResourceDictionary
+﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:LooklessControls">
@@ -7,7 +6,7 @@
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type local:ImplementationControl}">
-                    <local:LooklessControl>
+                    <local:LooklessControl Title="Implementation Control">
                         <local:LooklessControl.CustomContent>
                             <Border Background="Gainsboro" BorderThickness="1" Margin="4,4,4,4">
                                 <!-- Any content that you want to display can be provided here -->
