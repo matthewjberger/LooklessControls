@@ -1,0 +1,30 @@
+﻿<!-- NOTE: the build action must be set to 'Resource' for resource dictionaries referenced by the Generic.xaml -->
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:LooklessControls">
+    <Style TargetType="{x:Type local:ImplementationControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:ImplementationControl}">
+                    <local:LooklessControl>
+                        <local:LooklessControl.CustomContent>
+                            <Border Background="Gainsboro" BorderThickness="1" Margin="4,4,4,4">
+                                <!-- Any content that you want to display can be provided here -->
+                                <ListView HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <ListView.Items>
+                                        <ListViewItem>Some data</ListViewItem>
+                                        <ListViewItem>More data</ListViewItem>
+                                        <ListViewItem>Stuff</ListViewItem>
+                                        <ListViewItem>FakeItem</ListViewItem>
+                                        <ListViewItem>FakeItem</ListViewItem>
+                                    </ListView.Items>
+                                </ListView>
+                            </Border>
+                        </local:LooklessControl.CustomContent>
+                    </local:LooklessControl>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

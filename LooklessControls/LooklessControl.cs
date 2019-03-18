@@ -27,6 +27,8 @@
             var contentPresenter = GetTemplateChild(PART_CustomContentPresenter) as ContentPresenter;
 
             // Which can be used to modify template parts when the template is applied
+            // such as for setting the entire control's datacontext
+            // to the same datacontext used by the custom content
             DataContext = contentPresenter?.DataContext;
         }
 
@@ -43,7 +45,7 @@
         }
 
         public static readonly DependencyProperty CustomContentProperty =
-            DependencyProperty.Register("CustomContent", typeof(object), typeof(LooklessControl), new PropertyMetadata(0));
+            DependencyProperty.Register("CustomContent", typeof(object), typeof(LooklessControl));
 
     }
 }

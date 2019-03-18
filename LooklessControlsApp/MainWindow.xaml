@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:looklessControls="clr-namespace:LooklessControls;assembly=LooklessControls"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="200" Width="300">
     <TabControl>
         <TabItem Header="Control 1">
             <looklessControls:LooklessControl>
                 <looklessControls:LooklessControl.CustomContent>
-                    <Border Background="Black" BorderThickness="1" Margin="4,4,4,4">
-                        <TextBox Text="Test"/>
+
+                    <Border Background="Gainsboro" BorderThickness="1" Margin="4,4,4,4">
+
+                        <!-- Any content that you want to display can be provided here -->
+                        <Button Content="Press Me"/>
+
                     </Border>
                 </looklessControls:LooklessControl.CustomContent>
             </looklessControls:LooklessControl>
+        </TabItem>
+        <TabItem Header="Control 2">
+            <looklessControls:ImplementationControl/>
         </TabItem>
     </TabControl>
 
