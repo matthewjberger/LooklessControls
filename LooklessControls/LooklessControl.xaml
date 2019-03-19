@@ -1,4 +1,3 @@
-﻿<!-- NOTE: the build action must be set to 'Resource' for resource dictionaries referenced by the Generic.xaml -->
 <ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
